@@ -54,15 +54,24 @@ VALUES
 
 INSERT INTO `railway`.`carriage_type` (`name`, `seats_count`)
 VALUES
-	(NULL, NULL, NULL);
-
-
+	("Спальный", 20),
+	("Купе", 30),
+	("Плацкарт", 40),
+	("Сидячий", 50);
 
 INSERT INTO `railway`.`carriage` (`voyage_id`, `carriage_type_id`, `number`)
 VALUES
-	(NULL, NULL, NULL, NULL);
+	(1, 1, 1),
+	(1, 2, 2),
+	(1, 2, 3),
+	(1, 3, 4),
+	(2, 2, 1),
+	(2, 2, 2),
+	(2, 3, 3),
+	(2, 4, 5),
+	(2, 4, 6);
 
-INSERT INTO `railway`.`ticket` (`user_id`, `passenger_id`, `voyage_id`, `carriage_num`, `seat_num`, `price`)
+INSERT INTO `railway`.`ticket` (`user_id`, `passenger_id`, `carriage_station_id`, `carriage_num`, `seat_num`, `price`)
 VALUES
 	(120, , NULL, NULL, NULL, NULL, NULL, NULL);
 
